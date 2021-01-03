@@ -1,0 +1,199 @@
+body{
+    font-family: '微软雅黑';
+    font-size:14px;
+    color:#333;
+}
+.navbar{
+    margin-bottom: 0;
+    border: 0;
+}
+div.menu{
+    background: #ff722b;
+    border-radius: 0;
+}
+div.menu .navbar-nav>li>a,.footer p,.footer p a{
+    color:#fff;
+}
+.navbar-header .navbar-brand{
+    padding:5px 0;
+}
+.navbar-collapse,.navbar-form{
+    border-top-color: #fff;
+}
+.navbar-form{
+    border-bottom-color: #fff;
+}
+.navbar-default .navbar-toggle{
+    border:1px solid #fff;
+}
+.navbar-default .navbar-toggle .icon-bar{
+    background: #fff;
+}
+.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{
+    background:pink;
+}
+.navbar-default .navbar-form{
+    border-color:#fff;
+}
+/*banner图*/
+.jumbotron{
+    width:100%;
+    background: url("../images/active/banner_bg.jpg") center center no-repeat;
+    border: 0;
+    margin-top:-1px;
+    margin-bottom:20px;
+    padding:30px 0;
+}
+.jumbotron .col-lg-6{
+    margin-top:40px;
+}
+.jumbotron .col-lg-6 h3{
+    color:#ff0;
+    font-size:18px;
+}
+.jumbotron .col-lg-6 p{
+    color:#fff;
+    font-size: 14px;
+    line-height:32px;
+}
+@media (max-width: 992px) {
+    .jumbotron .col-lg-6 {
+        margin-top: 20px;
+    }
+}
+/*活动图片样式开始*/
+.contain{
+    padding:0 3%;
+}
+.contain .row{
+    margin:0;
+}
+.contain .active_img{
+    margin-top:12px;
+    margin-bottom:20px;
+}
+.contain .active_img h3{
+    font-size: 28px;
+    margin-bottom:25px;
+    margin-top:0;
+}
+.active_img h3,.active_img p{
+    font-weight: bold;
+    line-height:25px;
+}
+.contain .row div[class*="col-lg-"] {
+    /*text-align: center;*/
+}
+.thumbnail{
+    max-width:260px;
+    margin:0 auto 20px;
+    display: inline-block;
+}
+.thumbnail .img{
+    overflow: hidden;
+}
+.thumbnail .img img{
+    width:100%;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.thumbnail .img img:hover{
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.thumbnail  h3{
+    padding:10px;
+    text-align: center;
+    margin:0;
+    font-size:16px;
+}
+/*推荐商品*/
+.contain .goods_list{
+    margin-bottom: 20px;
+}
+.contain .goods_title{
+    padding:0 10px 0 0;
+    font-size:16px;
+    margin-bottom:20px;
+}
+.contain .goods_list .goods_title{
+    background:#ff722b;
+}
+.contain .goods_title h3,.contain .goods_title a{
+    margin:0;
+    height:40px;
+    line-height:40px;
+    text-indent: 32px;
+    color: #fff;
+}
+.contain .goods_list div[class*="col-"]{
+    padding:0;
+    border:1px solid #ddd;
+    margin-top:-1px;
+    text-align: center;
+}
+/*调整边框重叠的方法，如果使用margin-left:-1px的方法的话，会多出5像素的宽度*/
+@media (min-width:768px){
+    .contain .goods_list div[class*="col-"]:nth-child(2n+1){
+        border-right-color:#fff
+    }
+    .contain .goods_list div[class*="col-"]:nth-child(2n){
+        border-right-color:#fff
+    }
+    .contain .goods_list div[class*="col-"]:nth-child(3n){
+        border-right-color:#ddd
+    }
+}
+@media (min-width:992px){
+    .contain .goods_list div[class*="col-"]:nth-child(2n+1){
+        border-right-color:#fff
+    }
+    .contain .goods_list div[class*="col-"]:nth-child(3n){
+        border-right-color:#fff
+    }
+    .contain .goods_list div[class*="col-"]:nth-child(4n){
+        border-right-color:#ddd
+    }
+}
+@media (min-width:1200px){
+    .contain .goods_list div[class*="col-"]:nth-child(2n+1){
+        border-right-color:#fff
+    }
+    .contain .goods_list div[class*="col-"]:nth-child(4n){
+        border-right-color:#fff
+    }
+    .contain .goods_list div[class*="col-"]:nth-child(6n){
+        border-right-color:#ddd
+    }
+}
+.contain .goods_list div[class*="col-"] img{
+    display: inline-block;
+}
+.contain .row .caption h3{
+    text-align: center;
+}
+.contain .row .caption .price{
+    text-align: center;
+    margin-top:15px;
+    margin-bottom:15px;
+    color:#f00;
+    font-size:16px;
+    display: block;
+}
+/*底部样式*/
+.footer{
+    padding:30px 0;
+    background: #ff722b;
+    text-align: center;
+    font-size:13px;
+    font-weight: bold;
+}
+.footer p{
+    letter-spacing: 1px;
+
+}

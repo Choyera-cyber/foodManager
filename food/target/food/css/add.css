@@ -1,0 +1,64 @@
+.form{
+    padding:20px 0 0;
+}
+.form .form-group{
+    margin-top:10px;
+}
+.form .form-group label,.form .form-group input{
+    display: inline-block;
+}
+.form .form-group label{
+    width:20%;
+    height:38px;
+    line-height: 38px;
+    font-size: 14px;
+}
+.form .form-group input{
+    width:74%;
+    height:36px;
+    background: #f7f7f7;
+    border:1px solid #ccc;
+    padding:0 2% 0;
+}
+/*上传头像*/
+
+.form .form-group a{
+    z-index: 111;
+    position: absolute;
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    background: #37ab40;
+    color: #fff;
+    text-align: center;
+    margin-left:5px;
+}
+.form .form-group .error{
+    height:15px;
+    margin:10px 0 0;
+    text-indent: 22%;
+    font-size:13px;
+    color:#f00;
+}
+.form .form-group .explain{
+    width:50%;
+}
+.form .form-group input[type="checkbox"] {
+    width:16px;
+    height:16px;
+}
+button{
+    width:100%;
+    padding:10px 0;
+    border:0;
+    background:#37ab40;
+    color:#fff;
+    display: block;
+    cursor: pointer;
+}
+.title .float_left{
+    margin-top:15px;
+    display: block;
+    text-align: right;
+    color:#37ab40;
+}

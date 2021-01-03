@@ -1,0 +1,241 @@
+body{
+    font-family: '微软雅黑';
+    color:#666;
+    -webkit-overflow-scrolling:touch;
+    overflow-scrolling:touch;
+}
+.mobile{
+    /*使用此种方法定位，使结尾定位相对其定位，兼容微信*/
+    position:absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background:#efefef;
+}
+.header{
+    text-align: center;
+    height:2.5rem;
+    background:rgba(158,247,134,0.8);
+    /*background:#37ab40;*/
+    position: relative;
+}
+.header .logo{
+    width:3.6rem;
+    height:1.25rem;
+    display: block;
+    margin:0.6rem auto;
+}
+.header .logo img{
+     width:100%;
+ }
+.header .search{
+    width:1.6rem;
+    height:1.6rem;
+    position:absolute;
+    right:0.75rem;
+    top:0.45rem;
+    background: url("../images/search.png") left top no-repeat;
+    background-size: 1.6rem 1.6rem;
+}
+.center{
+    position:absolute;
+    left:0;
+    right:0;
+    top:2.5rem;
+    bottom:2.5rem;
+    background:#efefef;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.center .slide{
+    position:relative;
+}
+.center .slide img{
+    width:100%;
+}
+.center .slide .slide_circle{
+    position:absolute;
+    right:0.5rem;
+    bottom:0.5rem;
+}
+.center .slide .slide_circle li{
+    display: inline-block;
+    width:0.5rem;
+    height:0.5rem;
+    border-radius: 0.25rem;
+    border:0.075rem solid #ccc;
+}
+.center .slide .slide_circle li.active{
+    border:0.075rem solid #37ab40;
+}
+.center .list{
+    margin-top:0.7rem;
+    padding:1rem 0 0;
+    background:#fff;
+    display: block;
+}
+.center .list li{
+    width:25%;
+    height:5.5rem;
+    text-align: center;
+    overflow: hidden;
+}
+.center .list li a{
+    display: block;
+    width:3rem;
+    height:3rem;
+    margin:0 auto;
+}
+.center .list li:nth-child(1) a{
+    background: url("../images/mobileicons.png") left top no-repeat;
+    background-size: 3rem 39.15rem;
+}
+.center .list li:nth-child(2) a{
+    background: url("../images/mobileicons.png") left -3rem no-repeat;
+    background-size: 3rem 39.15rem;
+}
+.center .list li:nth-child(3) a{
+    background: url("../images/mobileicons.png") left -6rem no-repeat;
+    background-size: 3rem 39.15rem;
+}
+.center .list li:nth-child(4) a{
+    background: url("../images/mobileicons.png") left -9rem no-repeat;
+    background-size: 3rem 39.15rem;
+}
+.center .list li:nth-child(5) a{
+    background: url("../images/mobileicons.png") left -12rem no-repeat;
+    background-size: 3rem 39.15rem;
+}
+.center .list li:nth-child(6) a{
+    background: url("../images/mobileicons.png") left -15rem no-repeat;
+    background-size: 3rem 39.15rem;
+}
+.center .list li:nth-child(7) a{
+    background: url("../images/mobileicons.png") left -18rem no-repeat;
+    background-size: 3rem 39.15rem;
+}.center .list li:nth-child(8) a{
+     background: url("../images/mobileicons.png") left -21rem no-repeat;
+     background-size: 3rem 39.15rem;
+ }
+.center .list li h2{
+    margin-top:0.5rem;
+    height:1.05rem;
+    font:bold 13px/1.05rem "微软雅黑";
+    color:#333;
+}
+.center .banner{
+    margin:0.5rem 0;
+    background:#fff;
+    padding:1rem 0.5rem;
+}
+.center .banner_title h3{
+    border-left:0.2rem solid gold;
+    padding-left:0.5rem;
+    color:gold;
+    font-size:18px;
+}
+.center .banner_title a{
+    font-size:16px;
+}
+.banner .banner_img{
+    margin-top:0.5rem;
+}
+.banner .banner_img img,.banner .banner_list li img{
+    width:100%;
+}
+.banner .banner_list{
+    margin-top:1rem;
+}
+.banner .banner_list li{
+    width:30%;
+    border-right:0.05rem solid #ccc;
+    padding:0 2%;
+    font-size:13px;
+}
+.banner .banner_list li:first-child{
+    padding-left:0;
+}
+.banner .banner_list li:last-child{
+    border-right:none;
+    padding-right:0;
+}
+.banner .banner_list li h3{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom:0.5rem;
+    font-size:16px;
+}
+.banner .banner_list li p:last-child{
+    height:1.3rem;
+    text-align: center;
+    line-height: 1.3rem;
+    margin-top:0.5rem;
+}
+.banner .banner_list li p span{
+    width:50%;
+    color:red;
+}
+.banner .banner_list li p a{
+    width:1.3rem;
+    border:0.05rem solid #ccc;
+    border-radius: 1.3rem;
+    color:red;
+    font-size:14px;
+    font-weight: bold;
+}
+@media (min-width:500px){
+    .banner .banner_list li p a{
+        font-size: 20px;
+    }
+}
+.footer{
+    width:100%;
+    height:2.5rem;
+    display: block;
+    /*为了兼容微信用绝对定位*/
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#fff;
+    font-size:0;
+}
+.footer ul{
+    height:2.5rem;
+}
+.footer ul li{
+    width:25%;
+    height:2.5rem;
+    font-size:13px;
+    text-align: center;
+}
+.footer ul li a{
+    display: block;
+    width:100%;
+    height:1.3rem;
+    text-align: center;
+    margin:0.25rem auto 0;
+}
+.footer ul li:nth-child(1) a{
+    background:url("../images/mobileicons.png") 1.25rem -25rem  no-repeat;
+    background-size: 3rem 36.4rem;
+}
+.footer ul li:nth-child(2) a{
+    background:url("../images/mobileicons.png") 1.25rem -33.5rem  no-repeat;
+    background-size: 3rem 36.4rem;
+}
+.footer ul li:nth-child(3) a{
+    background:url("../images/mobileicons.png") 1.25rem -22.35rem  no-repeat;
+    background-size: 3rem 36.4rem;
+}
+.footer ul li:nth-child(4) a{
+    background:url("../images/mobileicons.png") 1.25rem -27.85rem  no-repeat;
+    background-size: 3rem 36.4rem;
+}
+.footer ul li h3{
+    font:12px/12px "微软雅黑";
+    color:#949392;
+    margin-top:0.2rem;
+}
